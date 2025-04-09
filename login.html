@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <title>Log In</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div>
+    <ul id="navbar">
+      <li><a class="active" href="index.html">Home</a></li>
+    </ul>
+</div>
+</div>
+
+  <div id="login-box">
+    <div class="left">
+      <h1>Log In</h1>
+      <input type="text" id="username" name="username" placeholder="username" required />
+      <input type="text" id="email" name="email" placeholder="Email" required />
+      <input type="password" id="password" name="password" placeholder="Password" required />
+
+      <input type="submit" id="login" name="login" value="Log In" required />
+      <h2>Create an account. <a href="sign up.html">Sign Up</a> </h2>
+    </div>
+
+    <div class="right">
+      <div class="or">OR</div>
+      <span class="loginwith">Sign In With</span>
+
+      <button class="social-signin google" id="login">Log in with Google</button>
+      <button class="social-signin facebook" id="login">Log in with Facebook</button>
+      <button class="social-signin github" id="login">Log in with Github</button>
+    </div>
+
+    <div class="or">OR</div>
+    </section>
+
+</body>
+
+<script>
+  function auth() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    if (email == "admin@gmail.com" && password == "admin123") {
+      window.location.assign("index.html");
+      alert("Login Successfully");
+    }
+    else {
+      alert("Invalid Information");
+      return;
+    }
+  }
+</script>
+
+<script src="script.js"></script>
+
+</html>

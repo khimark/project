@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div class="login-container">
+    <h2>Admin Login</h2>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <div id="error-message" class="error"></div>
+</div>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Manage Products</a></li>
+                <li><a href="#orders">View Orders</a></li>
+                <li><a href="#users">Manage Users</a></li>
+                <li><button id="logout-button">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="products">
+            <h2>Manage Products</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="text" id="product-price" placeholder="Product Price" required>
+                <input type="file" id="product-image" required>
+                <button type="submit">Add Product</button>
+            </form>
+            <div id="product-list"></div>
+        </section>
+
+        <section id="orders">
+            <h2>View Orders</h2>
+            <div id="order-list">
+                <!-- Orders will be displayed here -->
+            </div>
+        </section>
+        <section id="forms">
+            <h2>View Message</h2>
+            <div id="message-form">
+                <!-- Messages will be displayed here -->
+            </div>
+        </section>
+
+        <section id="users">
+            <h2>Manage Users</h2>
+            <div id="user-list">
+                <!-- Users will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 E-commerce Admin</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
